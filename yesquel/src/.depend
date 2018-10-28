@@ -1,0 +1,522 @@
+scheduler.o: scheduler.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/scheduler.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/inttypes.h \
+ ../include/inttypes.h
+kvinterface.o: kvinterface.cpp ../include/options.h ../include/tmalloc.h \
+ ../include/os.h ../include/inttypes.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/dtreeaux.h \
+ ../include/options.h ../include/cellbuf.h ../include/tmalloc.h \
+ ../include/kvinterface.h ../include/record.h ../include/coid.h \
+ ../include/gaiatypes.h ../include/supervalue.h ../include/util.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/datastructmt.h \
+ ../include/scheduler.h ../include/debug.h ../include/splitter-client.h \
+ ../include/newconfig.h ../include/ipmisc.h ../include/grpctcp.h \
+ ../include/task.h ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/splitterrpcaux.h ../include/dtreesplit.h \
+ ../include/kvinterface.h ../include/clientlib.h \
+ ../include/clientlib-common.h ../include/clientdir.h ../include/ccache.h \
+ ../include/gaiarpcaux.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h ../include/clientlib-local.h \
+ ../include/clientdir.h
+record.o: record.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/record.h ../include/inttypes.h
+callserver.o: callserver.cpp ../include/tmalloc.h ../include/options.h \
+ ../include/os.h ../include/inttypes.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/gaiatypes.h \
+ ../include/clientdir.h ../include/options.h ../include/gaiatypes.h \
+ ../include/newconfig.h ../include/ipmisc.h ../include/util.h \
+ ../include/datastruct.h ../include/tmalloc.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/datastructmt.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h ../include/ccache.h \
+ ../include/valbuf.h ../include/clientlib.h ../include/debug.h \
+ ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/gaiarpcaux.h ../include/record.h ../include/supervalue.h \
+ ../include/pendingtx.h ../include/gaiarpcauxfunc.h
+ccache-server-nop.o: ccache-server-nop.cpp ../include/inttypes.h \
+ ../include/util.h ../include/prng.h ../include/os.h \
+ ../include/inttypes.h ../include/ccache.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/gaiatypes.h ../include/valbuf.h \
+ ../include/ccache-server.h
+logmem.o: logmem.cpp ../include/tmalloc.h ../include/os.h \
+ ../include/inttypes.h ../include/options.h ../include/debug.h \
+ ../include/options.h ../include/logmem.h ../include/gaiarpcaux.h \
+ ../include/tmalloc.h ../include/ipmisc.h ../include/gaiatypes.h \
+ ../include/os.h ../include/util.h ../include/prng.h ../include/record.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/pendingtx.h ../include/debug.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/diskstorage.h \
+ ../include/storageserver.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h
+main.o: main.cpp ../include/tmalloc.h ../include/os.h \
+ ../include/inttypes.h ../include/options.h ../include/debug.h \
+ ../include/options.h ../include/tcpdatagram.h ../include/tmalloc.h \
+ ../include/gaiatypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/datastruct.h ../include/ipmisc.h \
+ ../include/task.h ../include/datastructmt.h ../include/taskdefs.h \
+ ../include/grpctcp.h ../include/scheduler.h ../include/tcpdatagram.h \
+ ../include/task.h ../include/gaiarpcaux.h ../include/record.h \
+ ../include/supervalue.h ../include/valbuf.h ../include/pendingtx.h \
+ ../include/debug.h ../include/gaiarpcauxfunc.h ../include/warning.h \
+ ../include/storageserver.h ../include/gaiarpcaux.h \
+ ../include/newconfig.h ../include/grpctcp.h \
+ ../include/storageserver-rpc.h ../include/storageserverstate.h \
+ ../include/disklog.h ../include/diskstorage.h ../include/logmem.h \
+ ../include/ccache-server.h ../include/kvinterface.h ../include/coid.h \
+ ../include/storageserver-splitter.h ../include/splitter-client.h \
+ ../include/splitterrpcaux.h ../include/clientdir.h ../include/ccache.h \
+ ../include/util-more.h
+clientlib.o: clientlib.cpp ../include/tmalloc.h ../include/options.h \
+ ../include/debug.h ../include/options.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/inttypes.h \
+ ../include/clientlib.h ../include/debug.h ../include/util.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/clientlib-common.h \
+ ../include/clientdir.h ../include/newconfig.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/ccache.h ../include/valbuf.h \
+ ../include/gaiarpcaux.h ../include/record.h ../include/supervalue.h \
+ ../include/pendingtx.h ../include/gaiarpcauxfunc.h \
+ ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/gaiarpcaux.h ../include/newconfig.h ../include/supervalue.h \
+ ../include/record.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/kvinterface.h ../include/coid.h
+debug.o: debug.cpp ../include/debug.h ../include/options.h
+storageserver-nop.o: storageserver-nop.cpp
+newconfig.o: newconfig.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/newconfig.h ../include/inttypes.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/os.h \
+ ../include/util.h ../include/prng.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/util.h ../include/ipmisc.h \
+ ../include/grpctcp.h
+treedirect.o: treedirect.cpp ../include/options.h ../include/debug.h \
+ ../include/options.h ../include/os.h ../include/inttypes.h \
+ ../include/tmalloc.h ../include/treedirect.h ../include/sqlite.h \
+ ../include/kvinterface.h ../include/record.h ../include/coid.h \
+ ../include/gaiatypes.h ../include/os.h ../include/supervalue.h \
+ ../include/tmalloc.h ../include/util.h ../include/prng.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/datastructmt.h \
+ ../include/btree.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/scheduler.h ../include/debug.h ../include/btreeInt.h \
+ ../include/clientlib.h ../include/ipmisc.h ../include/clientlib-common.h \
+ ../include/clientdir.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/task.h ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/ccache.h ../include/gaiarpcaux.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h ../include/yesql-init.h
+diskstorage.o: diskstorage.cpp ../include/tmalloc.h ../include/os.h \
+ ../include/inttypes.h ../include/diskstorage.h ../include/gaiatypes.h \
+ ../include/os.h ../include/pendingtx.h ../include/tmalloc.h \
+ ../include/debug.h ../include/options.h ../include/util.h \
+ ../include/prng.h ../include/supervalue.h ../include/datastruct.h \
+ ../include/record.h ../include/valbuf.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/gaiarpcauxfunc.h
+splitter-standalone.o: splitter-standalone.cpp ../include/tmalloc.h \
+ ../include/splitter-standalone.h ../include/record.h \
+ ../include/inttypes.h ../include/dtreeaux.h ../include/options.h \
+ ../include/cellbuf.h ../include/tmalloc.h ../include/kvinterface.h \
+ ../include/coid.h ../include/gaiatypes.h ../include/os.h \
+ ../include/supervalue.h ../include/util.h ../include/prng.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/datastructmt.h \
+ ../include/scheduler.h ../include/debug.h ../include/record.h \
+ ../include/dtreeaux.h
+storageserver-rpc.o: storageserver-rpc.cpp ../include/tmalloc.h \
+ ../include/os.h ../include/inttypes.h ../include/debug.h \
+ ../include/options.h ../include/gaiarpcaux.h ../include/tmalloc.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/os.h \
+ ../include/util.h ../include/prng.h ../include/record.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/pendingtx.h ../include/debug.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/storageserver.h ../include/gaiarpcaux.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/task.h ../include/tcpdatagram.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/diskstorage.h ../include/logmem.h ../include/ccache-server.h \
+ ../include/storageserver-rpc.h
+server-splitter-nop.o: server-splitter-nop.cpp ../include/tmalloc.h \
+ ../include/util.h ../include/prng.h ../include/os.h \
+ ../include/inttypes.h ../include/gaiatypes.h
+tmalloc.o: tmalloc.cpp ../include/tmalloc-include.h ../include/os.h \
+ ../include/inttypes.h ../include/datastruct.h ../include/prng.h
+storageserverstate.o: storageserverstate.cpp ../include/tmalloc.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/options.h ../include/tmalloc.h ../include/gaiatypes.h \
+ ../include/inttypes.h ../include/os.h ../include/pendingtx.h \
+ ../include/debug.h ../include/util.h ../include/prng.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/record.h \
+ ../include/valbuf.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/diskstorage.h ../include/logmem.h \
+ ../include/gaiarpcaux.h ../include/ipmisc.h ../include/newconfig.h \
+ ../include/grpctcp.h ../include/scheduler.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/ccache-server.h
+disklog-nop.o: disklog-nop.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/disklog.h ../include/tmalloc.h \
+ ../include/gaiatypes.h ../include/inttypes.h ../include/os.h \
+ ../include/pendingtx.h ../include/debug.h ../include/util.h \
+ ../include/prng.h ../include/supervalue.h ../include/datastruct.h \
+ ../include/record.h ../include/valbuf.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/diskstorage.h \
+ ../include/pendingtx.h ../include/task.h ../include/ipmisc.h \
+ ../include/taskdefs.h
+tcpdatagram.o: tcpdatagram.cpp ../include/tmalloc.h ../include/os.h \
+ ../include/inttypes.h ../include/datastruct.h ../include/prng.h \
+ ../include/os.h ../include/tmalloc.h ../include/tcpdatagram.h \
+ ../include/options.h ../include/gaiatypes.h ../include/util.h \
+ ../include/datastruct.h ../include/ipmisc.h ../include/task.h \
+ ../include/datastructmt.h ../include/taskdefs.h ../include/util.h
+dtreesplit.o: dtreesplit.cpp ../include/tmalloc.h ../include/options.h \
+ ../include/gaiatypes.h ../include/inttypes.h ../include/os.h \
+ ../include/datastruct.h ../include/prng.h ../include/tmalloc.h \
+ ../include/util.h ../include/dtreeaux.h ../include/options.h \
+ ../include/cellbuf.h ../include/kvinterface.h ../include/record.h \
+ ../include/coid.h ../include/gaiatypes.h ../include/supervalue.h \
+ ../include/util.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/datastructmt.h ../include/scheduler.h ../include/debug.h \
+ ../include/dtreesplit.h ../include/debug.h ../include/coid.h \
+ ../include/splitter-standalone.h ../include/dtreeaux.h
+memkv-simple.o: memkv-simple.cpp ../include/options.h \
+ ../include/memkv-simple.h ../include/options.h ../include/gaiatypes.h \
+ ../include/inttypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/kvinterface.h ../include/record.h \
+ ../include/coid.h ../include/supervalue.h ../include/tmalloc.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/datastructmt.h
+dtree.o: dtree.cpp ../include/os.h ../include/inttypes.h \
+ ../include/gaiarpcaux.h ../include/tmalloc.h ../include/options.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/os.h \
+ ../include/util.h ../include/prng.h ../include/record.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/pendingtx.h ../include/debug.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/kvinterface.h ../include/coid.h ../include/scheduler.h \
+ ../include/supervalue.h ../include/util.h ../include/coid.h \
+ dtreesplit.cpp ../include/tmalloc.h ../include/options.h \
+ ../include/gaiatypes.h ../include/datastruct.h ../include/dtreesplit.h \
+ ../include/debug.h ../include/splitter-client.h ../include/newconfig.h \
+ ../include/grpctcp.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/splitterrpcaux.h
+clientlib-common.o: clientlib-common.cpp ../include/tmalloc.h \
+ ../include/options.h ../include/debug.h ../include/options.h \
+ ../include/clientlib-common.h ../include/debug.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/inttypes.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/datastruct.h ../include/tmalloc.h \
+ ../include/grpctcp.h ../include/scheduler.h ../include/datastructmt.h \
+ ../include/task.h ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/ccache.h ../include/valbuf.h ../include/gaiarpcaux.h \
+ ../include/record.h ../include/supervalue.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h
+warning.o: warning.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h
+pendingtx-local.o: pendingtx-local.cpp pendingtx.cpp ../include/tmalloc.h \
+ ../include/options.h ../include/debug.h ../include/options.h \
+ ../include/pendingtx.h ../include/tmalloc.h ../include/debug.h \
+ ../include/gaiatypes.h ../include/inttypes.h ../include/os.h \
+ ../include/util.h ../include/prng.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/record.h ../include/valbuf.h \
+ ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/logmem.h ../include/gaiarpcaux.h ../include/ipmisc.h \
+ ../include/pendingtx.h ../include/diskstorage.h
+disklog.o: disklog.cpp ../include/tmalloc.h ../include/pendingtx.h \
+ ../include/tmalloc.h ../include/debug.h ../include/options.h \
+ ../include/gaiatypes.h ../include/inttypes.h ../include/os.h \
+ ../include/util.h ../include/prng.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/record.h ../include/valbuf.h \
+ ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/disklog.h ../include/pendingtx.h ../include/diskstorage.h
+storageserver-local.o: storageserver-local.cpp storageserver.cpp \
+ ../include/tmalloc.h ../include/os.h ../include/inttypes.h \
+ ../include/options.h ../include/debug.h ../include/options.h \
+ ../include/gaiarpcaux.h ../include/tmalloc.h ../include/ipmisc.h \
+ ../include/gaiatypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/record.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/pendingtx.h \
+ ../include/debug.h ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/gaiarpcauxfunc.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/kvinterface.h ../include/coid.h ../include/scheduler.h \
+ ../include/storageserver.h ../include/gaiarpcaux.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/diskstorage.h ../include/logmem.h ../include/ccache-server.h \
+ ../include/ccache.h ../include/ccache-server.h
+ccache.o: ccache.cpp ../include/inttypes.h ../include/ccache.h \
+ ../include/datastruct.h ../include/inttypes.h ../include/prng.h \
+ ../include/os.h ../include/tmalloc.h ../include/gaiatypes.h \
+ ../include/valbuf.h
+tmalloc-other.o: tmalloc-other.cpp ../include/tmalloc-other.h
+grpctcp.o: grpctcp.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/grpctcp.h ../include/tmalloc.h \
+ ../include/os.h ../include/inttypes.h ../include/util.h \
+ ../include/prng.h ../include/scheduler.h ../include/datastruct.h \
+ ../include/datastructmt.h ../include/task.h ../include/gaiatypes.h \
+ ../include/ipmisc.h ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/scheduler.h
+cellbuf.o: cellbuf.cpp ../include/cellbuf.h ../include/tmalloc.h
+logmem-local.o: logmem-local.cpp ../include/tmalloc.h logmem.cpp \
+ ../include/os.h ../include/inttypes.h ../include/options.h \
+ ../include/debug.h ../include/options.h ../include/logmem.h \
+ ../include/gaiarpcaux.h ../include/tmalloc.h ../include/ipmisc.h \
+ ../include/gaiatypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/record.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/pendingtx.h \
+ ../include/debug.h ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/diskstorage.h ../include/storageserver.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/task.h ../include/taskdefs.h ../include/tcpdatagram.h
+ccache-server.o: ccache-server.cpp ../include/inttypes.h \
+ ../include/util.h ../include/prng.h ../include/os.h \
+ ../include/inttypes.h ../include/ccache.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/gaiatypes.h ../include/valbuf.h \
+ ../include/ccache-server.h
+os.o: os.cpp ../include/os.h ../include/inttypes.h
+gaiatypes.o: gaiatypes.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/gaiatypes.h ../include/inttypes.h \
+ ../include/os.h ../include/ipmisc.h ../include/gaiatypes.h \
+ ../include/util.h ../include/prng.h ../include/util.h
+util-more.o: util-more.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/util-more.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/inttypes.h \
+ ../include/datastruct.h ../include/tmalloc.h
+config.tab.o: config.tab.cpp ../include/newconfig.h ../include/inttypes.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/os.h \
+ ../include/util.h ../include/prng.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/grpctcp.h ../include/options.h \
+ ../include/scheduler.h ../include/datastructmt.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h
+storageserver.o: storageserver.cpp ../include/tmalloc.h ../include/os.h \
+ ../include/inttypes.h ../include/options.h ../include/debug.h \
+ ../include/options.h ../include/gaiarpcaux.h ../include/tmalloc.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/os.h \
+ ../include/util.h ../include/prng.h ../include/record.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/pendingtx.h ../include/debug.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/gaiarpcauxfunc.h \
+ ../include/dtreeaux.h ../include/cellbuf.h ../include/kvinterface.h \
+ ../include/coid.h ../include/scheduler.h ../include/storageserver.h \
+ ../include/gaiarpcaux.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/task.h ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/diskstorage.h ../include/logmem.h ../include/ccache-server.h \
+ ../include/ccache.h ../include/ccache-server.h \
+ ../include/storageserver-splitter.h ../include/splitter-client.h \
+ ../include/splitterrpcaux.h ../include/clientdir.h ../include/ccache.h \
+ ../include/kvinterface.h
+gaiarpcaux.o: gaiarpcaux.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/gaiarpcaux.h ../include/tmalloc.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/inttypes.h \
+ ../include/os.h ../include/util.h ../include/prng.h ../include/record.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/pendingtx.h ../include/debug.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/pendingtx.h
+coid.o: coid.cpp ../include/options.h ../include/tmalloc.h \
+ ../include/os.h ../include/inttypes.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/clientlib.h \
+ ../include/debug.h ../include/options.h ../include/util.h \
+ ../include/ipmisc.h ../include/gaiatypes.h ../include/clientlib-common.h \
+ ../include/clientdir.h ../include/newconfig.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/ccache.h ../include/valbuf.h \
+ ../include/gaiarpcaux.h ../include/record.h ../include/supervalue.h \
+ ../include/pendingtx.h ../include/gaiarpcauxfunc.h \
+ ../include/clientdir.h ../include/coid.h ../include/kvinterface.h \
+ ../include/coid.h
+supervalue.o: supervalue.cpp ../include/tmalloc.h ../include/supervalue.h \
+ ../include/tmalloc.h ../include/util.h ../include/prng.h ../include/os.h \
+ ../include/inttypes.h ../include/datastruct.h ../include/record.h \
+ ../include/gaiatypes.h ../include/valbuf.h ../include/clientlib.h \
+ ../include/debug.h ../include/options.h ../include/ipmisc.h \
+ ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/ccache.h ../include/gaiarpcaux.h \
+ ../include/supervalue.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h
+yesql-init.o: yesql-init.cpp ../include/options.h ../include/clientdir.h \
+ ../include/options.h ../include/os.h ../include/inttypes.h \
+ ../include/gaiatypes.h ../include/newconfig.h ../include/ipmisc.h \
+ ../include/util.h ../include/prng.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/ccache.h ../include/valbuf.h \
+ ../include/kvinterface.h ../include/record.h ../include/coid.h \
+ ../include/supervalue.h ../include/splitter-client.h \
+ ../include/splitterrpcaux.h ../include/storageserver.h \
+ ../include/gaiarpcaux.h ../include/pendingtx.h ../include/debug.h \
+ ../include/gaiarpcauxfunc.h ../include/debug.h ../include/task.h
+storageserver-splitter.o: storageserver-splitter.cpp ../include/tmalloc.h \
+ ../include/os.h ../include/inttypes.h ../include/options.h \
+ ../include/debug.h ../include/options.h ../include/task.h \
+ ../include/gaiatypes.h ../include/os.h ../include/tmalloc.h \
+ ../include/datastruct.h ../include/prng.h ../include/datastructmt.h \
+ ../include/ipmisc.h ../include/util.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/task.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/tcpdatagram.h ../include/gaiarpcaux.h \
+ ../include/record.h ../include/supervalue.h ../include/valbuf.h \
+ ../include/pendingtx.h ../include/debug.h ../include/gaiarpcauxfunc.h \
+ ../include/warning.h ../include/util-more.h ../include/gaiatypes.h \
+ ../include/util.h ../include/datastruct.h ../include/newconfig.h \
+ ../include/grpctcp.h ../include/clientlib.h \
+ ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/ccache.h ../include/gaiarpcaux.h \
+ ../include/clientdir.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/kvinterface.h ../include/coid.h ../include/dtreesplit.h \
+ ../include/storageserver-splitter.h ../include/splitter-client.h \
+ ../include/splitterrpcaux.h ../include/splitterrpcaux.h \
+ ../include/loadstats.h
+test-sql-simple.o: test-sql-simple.cpp ../include/sqlite3.h
+storageserverstate-nop.o: storageserverstate-nop.cpp ../include/debug.h \
+ ../include/options.h ../include/storageserverstate.h \
+ ../include/disklog.h ../include/tmalloc.h ../include/gaiatypes.h \
+ ../include/inttypes.h ../include/os.h ../include/pendingtx.h \
+ ../include/debug.h ../include/util.h ../include/prng.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/record.h \
+ ../include/valbuf.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/diskstorage.h ../include/logmem.h \
+ ../include/gaiarpcaux.h ../include/ipmisc.h ../include/newconfig.h \
+ ../include/grpctcp.h ../include/scheduler.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/ccache-server.h
+loadstats.o: loadstats.cpp ../include/loadstats.h ../include/os.h \
+ ../include/inttypes.h ../include/tmalloc.h ../include/datastruct.h \
+ ../include/prng.h ../include/gaiatypes.h ../include/util.h \
+ ../include/supervalue.h ../include/record.h ../include/valbuf.h
+diskstorage-nop.o: diskstorage-nop.cpp ../include/tmalloc.h \
+ ../include/debug.h ../include/options.h ../include/diskstorage.h \
+ ../include/gaiatypes.h ../include/inttypes.h ../include/os.h \
+ ../include/pendingtx.h ../include/tmalloc.h ../include/debug.h \
+ ../include/util.h ../include/prng.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/record.h ../include/valbuf.h \
+ ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/pendingtx.h
+clientdir.o: clientdir.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/clientdir.h ../include/os.h \
+ ../include/inttypes.h ../include/gaiatypes.h ../include/newconfig.h \
+ ../include/ipmisc.h ../include/util.h ../include/prng.h \
+ ../include/datastruct.h ../include/tmalloc.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/datastructmt.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h ../include/ccache.h \
+ ../include/valbuf.h ../include/gaiarpcaux.h ../include/record.h \
+ ../include/supervalue.h ../include/pendingtx.h ../include/debug.h \
+ ../include/gaiarpcauxfunc.h
+clientlib-local.o: clientlib-local.cpp ../include/tmalloc.h \
+ ../include/debug.h ../include/options.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/inttypes.h \
+ ../include/gaiarpcaux.h ../include/tmalloc.h ../include/ipmisc.h \
+ ../include/gaiatypes.h ../include/util.h ../include/record.h \
+ ../include/supervalue.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/pendingtx.h ../include/debug.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/storageserver.h \
+ ../include/gaiarpcaux.h ../include/newconfig.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/diskstorage.h ../include/logmem.h ../include/ccache-server.h \
+ ../include/supervalue.h ../include/clientlib-local.h \
+ ../include/clientlib-common.h ../include/clientdir.h ../include/ccache.h \
+ ../include/clientlib-common.h ../include/record.h ../include/clientlib.h \
+ ../include/task.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/kvinterface.h ../include/coid.h
+task.o: task.cpp ../include/os.h ../include/inttypes.h \
+ ../include/tmalloc.h ../include/options.h ../include/debug.h \
+ ../include/options.h ../include/task.h ../include/gaiatypes.h \
+ ../include/os.h ../include/tmalloc.h ../include/datastruct.h \
+ ../include/prng.h ../include/datastructmt.h ../include/ipmisc.h \
+ ../include/util.h ../include/taskdefs.h ../include/datastruct.h \
+ ../include/taskdefs.h
+ipmisc.o: ipmisc.cpp ../include/tmalloc.h ../include/os.h \
+ ../include/inttypes.h ../include/options.h ../include/ipmisc.h \
+ ../include/gaiatypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h
+dtreeaux.o: dtreeaux.cpp ../include/options.h ../include/os.h \
+ ../include/inttypes.h ../include/dtreeaux.h ../include/options.h \
+ ../include/cellbuf.h ../include/tmalloc.h ../include/kvinterface.h \
+ ../include/record.h ../include/coid.h ../include/gaiatypes.h \
+ ../include/os.h ../include/supervalue.h ../include/util.h \
+ ../include/prng.h ../include/datastruct.h ../include/valbuf.h \
+ ../include/datastructmt.h ../include/scheduler.h ../include/debug.h \
+ ../include/supervalue.h ../include/util.h
+shell.o: shell.cpp ../include/options.h ../include/tmalloc.h \
+ ../include/yesql-init.h ../include/sqlite3.h
+util.o: util.cpp ../include/tmalloc.h ../include/debug.h \
+ ../include/options.h ../include/util.h ../include/prng.h ../include/os.h \
+ ../include/inttypes.h
+splitter-client.o: splitter-client.cpp ../include/tmalloc.h \
+ ../include/options.h ../include/debug.h ../include/options.h \
+ ../include/splitter-client.h ../include/os.h ../include/inttypes.h \
+ ../include/gaiatypes.h ../include/newconfig.h ../include/ipmisc.h \
+ ../include/util.h ../include/prng.h ../include/datastruct.h \
+ ../include/tmalloc.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/splitterrpcaux.h \
+ ../include/gaiarpcaux.h ../include/record.h ../include/supervalue.h \
+ ../include/valbuf.h ../include/pendingtx.h ../include/debug.h \
+ ../include/gaiarpcauxfunc.h ../include/clientdir.h ../include/ccache.h \
+ ../include/splitter-server.h ../include/gaiarpcaux.h \
+ ../include/splitterrpcaux.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/kvinterface.h ../include/coid.h
+valbuf.o: valbuf.cpp ../include/tmalloc.h ../include/supervalue.h \
+ ../include/tmalloc.h ../include/util.h ../include/prng.h ../include/os.h \
+ ../include/inttypes.h ../include/datastruct.h ../include/record.h \
+ ../include/gaiatypes.h ../include/valbuf.h ../include/clientlib.h \
+ ../include/debug.h ../include/options.h ../include/ipmisc.h \
+ ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/scheduler.h \
+ ../include/datastructmt.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/ccache.h ../include/gaiarpcaux.h \
+ ../include/supervalue.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h
+pendingtx.o: pendingtx.cpp ../include/tmalloc.h ../include/options.h \
+ ../include/debug.h ../include/options.h ../include/pendingtx.h \
+ ../include/tmalloc.h ../include/debug.h ../include/gaiatypes.h \
+ ../include/inttypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/supervalue.h ../include/datastruct.h \
+ ../include/record.h ../include/valbuf.h ../include/gaiarpcauxfunc.h \
+ ../include/datastructmt.h ../include/logmem.h ../include/gaiarpcaux.h \
+ ../include/ipmisc.h ../include/pendingtx.h ../include/diskstorage.h
+valbuf-local.o: valbuf-local.cpp ../include/tmalloc.h valbuf.cpp \
+ ../include/supervalue.h ../include/tmalloc.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/inttypes.h \
+ ../include/datastruct.h ../include/record.h ../include/gaiatypes.h \
+ ../include/valbuf.h ../include/clientlib.h ../include/debug.h \
+ ../include/options.h ../include/ipmisc.h ../include/clientlib-common.h \
+ ../include/clientdir.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/datastructmt.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h ../include/ccache.h \
+ ../include/gaiarpcaux.h ../include/supervalue.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h
+sqlite3.o: sqlite3.cpp ../include/options.h ../include/tmalloc.h \
+ ../include/sqlite.h ../include/options.h ../include/kvinterface.h \
+ ../include/record.h ../include/inttypes.h ../include/coid.h \
+ ../include/gaiatypes.h ../include/os.h ../include/supervalue.h \
+ ../include/tmalloc.h ../include/util.h ../include/prng.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/datastructmt.h \
+ ../include/btree.h ../include/kvinterface.h ../include/cellbuf.h \
+ ../include/yesql-init.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/scheduler.h ../include/debug.h os_unix.c pager.c btmutex.c \
+ ../include/btreeInt.h dtree.cpp ../include/os.h ../include/gaiarpcaux.h \
+ ../include/ipmisc.h ../include/pendingtx.h ../include/gaiarpcauxfunc.h \
+ ../include/supervalue.h ../include/util.h ../include/coid.h \
+ dtreesplit.cpp ../include/gaiatypes.h ../include/datastruct.h \
+ ../include/dtreesplit.h ../include/debug.h ../include/splitter-client.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/splitterrpcaux.h vdbe.c expr.c where.c parse.c tokenize.c \
+ fts3.c
+storageserver-rpc-local.o: storageserver-rpc-local.cpp \
+ storageserver-rpc.cpp ../include/tmalloc.h ../include/os.h \
+ ../include/inttypes.h ../include/debug.h ../include/options.h \
+ ../include/gaiarpcaux.h ../include/tmalloc.h ../include/ipmisc.h \
+ ../include/gaiatypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/record.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/pendingtx.h \
+ ../include/debug.h ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/task.h ../include/taskdefs.h ../include/storageserver.h \
+ ../include/gaiarpcaux.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/task.h ../include/tcpdatagram.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/diskstorage.h ../include/logmem.h ../include/ccache-server.h \
+ ../include/storageserver-rpc.h
